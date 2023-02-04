@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                container: {
+                    padding: {
+                        DEFAULT: '1rem',
+                        sm: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem',
+                    }        
+              }
+            }
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <header class="font-mono bg-gray-300/75 py-4">
+        <div class="container flex flex-col relative mx-auto md:flex-row md:justify-between md:items-center">
+        <!-- logo -->
+        <a href="#" class="text-4xl font-black text-blue-500">LOGO</a>
+         
+        <!-- hamburger-icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="blue" class="w-10 h-10 absolute right-5 top-0 cursor-pointer md:hidden " id="menu-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        
+        <!-- navigation -->
+        <nav id="menu" class="hidden md:block">
+            <ul class="w-full md:flex flex-row gap-5">
+                <li class="mt-8 md:mt-0">
+                    <a href="#" class="text-xl text-indigo-blue font-extrabold hover:text-blue-500 hover:underline">Home</a>
+                </li>
+                <li class="mt-2 md:mt-0">
+                    <a href="#" class="text-xl text-indigo-blue font-extrabold hover:text-blue-500 hover:underline">About</a>
+                </li>
+                <li class="mt-2 md:mt-0">
+                    <a href="#" class="text-xl text-indigo-blue font-extrabold hover:text-blue-500 hover:underline">Contact</a>
+                </li>
+                <li class="mt-2 md:mt-0">
+                    <a href="#" class="text-xl text-indigo-blue font-extrabold hover:text-blue-500 hover:underline">SignIn</a>
+                </li>
+                <li class="mt-2 md:mt-0">
+                    <a href="#" class="text-xl text-indigo-blue font-extrabold hover:text-stone-600 hover:underline">SignUp
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <script>
+        const menu_icon=document.getElementById("menu-icon");
+        const menu=document.getElementById("menu");
+
+       menu_icon.addEventListener('click',()=>{
+        menu.classList.toggle('hidden');
+       });
+    </script>
+</body>
+</html>
