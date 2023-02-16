@@ -1,0 +1,23 @@
+{
+  "name": "profile-card-component-remake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MIBENIN/Profile-card-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MIBENIN/Profile-card-component/issues"
+  },
+  "homepage": "https://github.com/MIBENIN/Profile-card-component#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  }
+}
