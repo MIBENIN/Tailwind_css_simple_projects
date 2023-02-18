@@ -1,0 +1,13 @@
+@tailwind base;
+
+@layer base{
+    h1{
+        @apply font-BigShouldersDisplay font-bold text-4xl text-TransparentWhite mt-8;
+    }
+    p{
+        @apply font-LexandDeca font-normal text-TransparentWhite my-6;
+    }
+
+}
+@tailwind components;
+@tailwind utilities;
